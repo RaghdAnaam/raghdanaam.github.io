@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Projects | Raghd Anaam</title>
+  <meta name="description" content="Project showcase: AI, full-stack, security, mobile and data projects by Raghd Anaam.">
+  <meta name="theme-color" content="#070b1a">
+  <meta property="og:title" content="Projects | Raghd Anaam">
+  <meta property="og:description" content="Project showcase: AI, full-stack, security, mobile and data projects by Raghd Anaam.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-2.jpg">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="nav" id="top">
+    <a class="brand" href="index.html" aria-label="Raghd Anaam, home">
+      <img src="assets/images/avatar.jpg" alt="" width="40" height="40">
+      <span>Raghd Anaam<small>Software Engineer</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu"><span></span></button>
+    <nav aria-label="Main">
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a class="nav-cta" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow reveal">Project showcase</span>
+        <h1 class="reveal" style="--d:.05s">Things I've <span class="grad-text">built</span></h1>
+        <p class="lead reveal" style="--d:.1s">AI apps, SaaS, developer tools, mobile and data projects. Filter by category, then click a card for details and demo links.</p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:clamp(28px,4vw,48px)">
+      <div class="container">
+        <div class="filters reveal" role="group" aria-label="Filter projects by category"><button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button><button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">AI</button><button class="filter-btn" type="button" data-filter="fullstack" aria-pressed="false">Full-Stack</button><button class="filter-btn" type="button" data-filter="security" aria-pressed="false">Security</button><button class="filter-btn" type="button" data-filter="mobile" aria-pressed="false">Mobile</button><button class="filter-btn" type="button" data-filter="data" aria-pressed="false">Data</button></div>
+        <p class="sr-only" id="filter-status" role="status" aria-live="polite">Showing 6 projects</p>
+        <div class="project-grid">
+      <article class="project-card reveal" data-cat="security fullstack" style="--d:0.0s">
+        <div class="card-img"><img src="assets/images/pii-detector.png" alt="Illustration of PII Log Leak Detector findings with masked values and severity labels" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag tag-security">Security</span><span class="tag tag-fullstack">Full-Stack</span></div>
+          <h3>PII Log Leak Detector</h3>
+          <p>A security-focused developer tool that scans source code and application logs for PII exposure and tells you how to fix it.</p>
+          <div class="chip-list"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Typer</span><span class="chip">Docker</span></div>
+          <div class="card-foot">
+            <div class="card-links"><a class="btn btn-primary btn-sm" href="https://github.com/RaghdAnaam" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a></div>
+            <button class="btn btn-ghost btn-sm js-details" type="button" aria-label="View details of PII Log Leak Detector">Details</button>
+          </div>
+          <div class="card-details"><ul><li>Detects emails, phone numbers, Malaysian ICs, payment cards and account numbers in code and logs.</li><li>Severity classification, confidence scores, masked findings and file/line tracing for every result.</li><li>Remediation guidance and automated rescanning through both a CLI and a React dashboard.</li><li>Automated testing and CI workflows with 69 passing tests, Ruff linting and frontend build validation.</li></ul></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-cat="ai fullstack" style="--d:0.1s">
+        <div class="card-img"><img src="assets/images/skinvision.jpg" alt="SkinVision home page: Start monitoring your skin health" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag tag-ai">AI</span><span class="tag tag-fullstack">Full-Stack</span></div>
+          <h3>SkinVision</h3>
+          <p>AI-powered skincare progress tracker with facial analysis, age prediction and skin condition trends over time.</p>
+          <div class="chip-list"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Vue.js</span><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">OpenCV</span><span class="chip">SQLite</span></div>
+          <div class="card-foot">
+            <div class="card-links"><a class="btn btn-primary btn-sm" href="https://skin-vision-brown.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">&#8599;</span></a></div>
+            <button class="btn btn-ghost btn-sm js-details" type="button" aria-label="View details of SkinVision">Details</button>
+          </div>
+          <div class="card-details"><ul><li>Facial image analysis, age prediction and skin condition tracking using TensorFlow/Keras (EfficientNet) and OpenCV.</li><li>Model trained on 23,708 images.</li><li>Flask backend and Vue.js frontend with SQLite storage.</li><li>Dashboard that visualizes skin condition and age-related trends over time.</li></ul></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-cat="ai fullstack" style="--d:0.2s">
+        <div class="card-img"><img src="assets/images/roomly.jpg" alt="Roomly home page showing a room before and after an AI redesign" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag tag-ai">AI</span><span class="tag tag-fullstack">Full-Stack</span></div>
+          <h3>Roomly</h3>
+          <p>AI interior design SaaS: upload a room photo, pick a style, and get a redesigned room in seconds.</p>
+          <div class="chip-list"><span class="chip">Next.js</span><span class="chip">React</span><span class="chip">Tailwind CSS</span><span class="chip">Clerk</span><span class="chip">Drizzle</span><span class="chip">PostgreSQL</span><span class="chip">Replicate</span></div>
+          <div class="card-foot">
+            <div class="card-links"><a class="btn btn-primary btn-sm" href="https://roomly-flax-two.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">&#8599;</span></a></div>
+            <button class="btn btn-ghost btn-sm js-details" type="button" aria-label="View details of Roomly">Details</button>
+          </div>
+          <div class="card-details"><ul><li>Full-stack SaaS built with Next.js, React and JavaScript, styled with Tailwind CSS and Shadcn UI.</li><li>Clerk authentication and Drizzle ORM with Neon PostgreSQL.</li><li>Replicate API transforms room photos by design theme; Cloudinary handles image storage.</li><li>PayPal credit-based payment system.</li></ul></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-cat="fullstack" style="--d:0.0s">
+        <div class="card-img"><img src="assets/images/research-grant.jpg" alt="Research Grant System admin dashboard with users, academicians, grants and milestones" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag tag-fullstack">Full-Stack</span></div>
+          <h3>Research Grant System</h3>
+          <p>Laravel system for managing research grant applications, project teams and milestones.</p>
+          <div class="chip-list"><span class="chip">Laravel</span><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">RBAC</span><span class="chip">CRUD</span></div>
+          <div class="card-foot">
+            <div class="card-links"><a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1LbC-PPn-rUwuTeQ7F3weLNga31sIA7yI/view?usp=sharing" target="_blank" rel="noopener noreferrer">Demo video <span aria-hidden="true">&#8599;</span></a></div>
+            <button class="btn btn-ghost btn-sm js-details" type="button" aria-label="View details of Research Grant System">Details</button>
+          </div>
+          <div class="card-details"><ul><li>Manages grant applications, project teams and milestones end to end.</li><li>Role-based access control with separate admin and user experiences.</li><li>Full CRUD across users, academicians and grants.</li><li>Built with Laravel, PHP and MySQL.</li></ul></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-cat="mobile" style="--d:0.1s">
+        <div class="card-img"><img src="assets/images/balanceit.jpg" alt="BalanceIt budget and expense entry screen" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag tag-mobile">Mobile</span></div>
+          <h3>BalanceIt</h3>
+          <p>Cross-platform budget and expense tracker for income, expenses, budgets and balance summaries.</p>
+          <div class="chip-list"><span class="chip">.NET MAUI</span><span class="chip">C#</span><span class="chip">Firebase</span></div>
+          <div class="card-foot">
+            <div class="card-links"><a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1XKffccj6eYNCRyDe5KI97ne4HGQjJZ3v/view?usp=sharing" target="_blank" rel="noopener noreferrer">Demo video <span aria-hidden="true">&#8599;</span></a></div>
+            <button class="btn btn-ghost btn-sm js-details" type="button" aria-label="View details of BalanceIt">Details</button>
+          </div>
+          <div class="card-details"><ul><li>Cross-platform mobile app built with .NET MAUI and C#.</li><li>Firebase Realtime Database for tracking income, expenses, budgets and summaries.</li><li>Simple entry flow with a live balance and budget status.</li></ul></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-cat="data" style="--d:0.2s">
+        <div class="card-img"><img src="assets/images/energy-dashboard.jpg" alt="Tableau dashboard of global energy consumption trends and rankings" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag tag-data">Data</span></div>
+          <h3>Energy Consumption Analytics Dashboard</h3>
+          <p>Interactive Tableau dashboards on global energy consumption patterns and peak usage periods.</p>
+          <div class="chip-list"><span class="chip">Tableau</span><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">NumPy</span></div>
+          <div class="card-foot">
+            <div class="card-links"><a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1pttkuw2YmMOxiqZR0eVejj1TvySX49Uv/view?usp=sharing" target="_blank" rel="noopener noreferrer">Demo video <span aria-hidden="true">&#8599;</span></a></div>
+            <button class="btn btn-ghost btn-sm js-details" type="button" aria-label="View details of Energy Consumption Analytics Dashboard">Details</button>
+          </div>
+          <div class="card-details"><ul><li>Cleaned and structured the datasets before analysis.</li><li>Built interactive Tableau dashboards: renewables vs fossil share, top consumers and regional trends 2000-2023.</li><li>Highlights consumption patterns and peak usage periods.</li></ul></div>
+        </div>
+      </article>
+        </div>
+        <p class="no-results">No projects in this category yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="modal" id="projectModal" aria-labelledby="modal-title">
+    <div class="modal-panel">
+      <button class="modal-close" type="button" aria-label="Close project details">&#10005;</button>
+      <img data-m-img alt="">
+      <div class="modal-body">
+        <div class="card-tags" data-m-tags></div>
+        <h2 id="modal-title" data-m-title></h2>
+        <div data-m-details></div>
+        <div class="chip-list" data-m-stack></div>
+        <div class="card-links" data-m-links></div>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Raghd Anaam.</p>
+      <div class="footer-links">
+        <a href="https://github.com/RaghdAnaam" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/raghd-anaam-b84ba1241/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:raghdanaam@gmail.com">Email</a>
+        <a href="#top">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>
